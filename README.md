@@ -1,2 +1,2 @@
 # MVC
-Tudo feito em mvc
+Tudo que foi feito em mvc
