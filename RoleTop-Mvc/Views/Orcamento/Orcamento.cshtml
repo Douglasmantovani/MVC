@@ -1,0 +1,70 @@
+<section class="orça">
+<h1>Solcitar orçamento</h1>
+<form method="POST" action='@Url.Action("Registrar", "Agendamento")'>
+<div>
+<label for="nome">Nome Completo</label>
+<br />
+<input id="nome" type="text" maxlength="20" minlength="3" name="nome" />
+</div>
+
+<div>
+<label for="endereco">CPF/CNPJ</label>
+<br />
+<input id="endereco" type="number" maxlength="20" minlength="3" name="endereco" />
+</div>
+
+<div>
+<label for="telefone">Telefone para contato</label>
+<br />
+<input id="telefone" type="number" />
+</div>
+
+<div>
+<label for="email">E-mail</label>
+<br />
+<input id="email" type="email" />
+</div>
+
+<div class="double-field">
+<div>
+<label for="Eventos">Eventos</label>
+<select id="Eventos" required>
+<option value="" disabled selected>Selecione</option>
+<option value="Formatura">Formatura</option>
+<option value="Show">shows</option>
+<option value="Casamento">Casamento</option>
+<option value="Anivesário">Aniversário</option>
+<option value="Confraternização">Confraternização</option>
+<option value="Balada">Baladas</option>
+<option value="Mágica">Mágica</option>
+<option value="stund-up">stund-up</option>
+</select>
+</div>
+<div>
+<label for="N°de pessoas">N°de pessoas</label>
+<select id="N°de pessoas">
+<option value="" disabled selected>Selecione</option>
+<option>100</option>
+<option>200</option>
+<option>300</option>
+<option>400</option>
+</select>
+</div>
+</div>
+<input type="submit" value="Solicitar orçamento!"/>
+</form>
+</section>
+
+
+
+<div class="vazio">
+    <br>
+    <br/>
+    <br>
+    <br/>
+    <br>
+    <br/>
+    <br>
+    <br>
+    <br>
+    </div>

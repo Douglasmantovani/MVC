@@ -1,0 +1,139 @@
+@model RoleTop_Mvc.ViewModel.DashboardViewModel
+
+<main>
+    <h2 class="titulomei">Dashboard</h2>
+    <section id="status-pedidos">
+        <h3 class="titulomei">Status dos pedidos</h3>
+        <div id="painel">
+            <div class="box-status-pedidos aprovados">
+                <h4>Aprovados</h4>
+                <p>@Model.AgendamentoAprovados</p>
+            </div>
+            <div class="box-status-pedidos pendentes">
+                <h4>Pendentes</h4>
+                <p>@Model.AgendamentoPendentes</p>
+            </div>
+            <div class="box-status-pedidos reprovados">
+                <h4>Reprovados</h4>
+                <p>@Model.AgendamentoReprovados</p>
+            </div>
+        </div>
+    </section>
+    <section id="lista-pedidos">
+        <h3 class="titulomei">Lista de pedidos</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="1">Data do Pedido</th>
+                    <th rowspan="1">Nome</th>
+                    <th rowspan="1">Endereço</th>
+                    <th colspan="1">Evento</th>
+                    <th colspan="1">Adicionais</th>
+                    <th colspan="1">N°de pessoas</th>
+                    <th colspan="1">Parcelamento</th>
+                    <th colspan="1">Acesso</th>
+                    <th colspan="2" rowspan="2">Aprovar/Reprovar</th>
+                </tr>
+                <tr>
+                    
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="10">
+                        <p>Pedidos atualizados em @DateTime.Now</p>
+                    </td>
+                </tr>
+            </tfoot>
+            <tbody>
+                @foreach (var Agendamentos in Model.Agendamento){
+                <tr>
+                    <td>@Agendamentos.DatadoPedido</td>
+                    <td>@Agendamentos.cliente.Nome</td>
+                    <td>@Agendamentos.Endereco</td>
+                    <td>@Agendamentos.NomeEvento</td>
+                    <td>@Agendamentos.Adicionais</td>
+                    <td>@Agendamentos.Npessoas</td>
+                    <td>@Agendamentos.Parcelamento</td>
+                    <td>@Agendamentos.TipodoEvento</td>
+                    <td><a href='@Url.Action("Aprovar", "Agendamento", new {id = @Agendamentos.Id})'><i class="fas fa-check"></i></a></td>
+                    <td><a href='@Url.Action("Reprovar", "Agendamento", new {id = @Agendamentos.Id})'><i class="fas fa-times"></i></a></td>
+                </tr>
+                }
+                
+    <table>
+        <thead>
+                
+    </section>
+            <h1>HISTORICO DO SITE</h1>
+            <tr>
+                <th>Data</th>
+                <th>Tipo do evento</th>
+                <th>Numero de Pessoas</th>
+                <th>Preço</th>
+                <th>Status do pedido</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach( var all in Model.Todos ) {
+                <tr>
+                    <td>@all.DataEvento</td>
+                    <td>@all.NomeEvento</td>
+                    <td>@all.Npessoas</td>
+                    <td>10.000</td>
+                    @if(@all.Status == 0){
+                    <td>Em analise</td>
+                    
+                    }else if(@all.Status == 1){
+                        <td> Aprovado </td>
+                    }else if(@all.Status == 2){
+                        <td> Reprovado </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <h1>Todos os Usuarios</h1>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Telefone</th>
+                <th>T.U</th> 
+                <th>Status</th>
+                <th colspan="1" rowspan="1">Banir</th>    
+            </tr>
+        </thead>
+        <tbody>
+            @foreach( var all in Model.TodosClientes) {
+                <tr>
+                    <td>@all.Nome</td>
+                    <td>@all.CPF</td>
+                    <td>@all.Telefone</td>
+                    @if(@all.TipoUsuario == 0){
+                    <td>Adminstrador</td>
+                    }else if(@all.TipoUsuario== 1)
+                    {
+                        <td>Comun</td>
+                    }
+                     @if(@all.statusUsuario == 0){
+                    <td>Normal</td>
+                    }else if(@all.statusUsuario== 1)
+                    {
+                        <td> Banido </td>
+                    }
+                    <td><a href='@Url.Action("Banir", "Agendamento", new {Status = @all.statusUsuario})'><i class="fas fa-times"></i></a></td>   
+                </tr>
+            }
+        </tbody>
+    </table>
+         
+
+    </section>
+
+<main>
+

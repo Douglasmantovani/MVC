@@ -1,0 +1,143 @@
+
+/********** ESTILO*******/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cadastre-se {
+    
+    display: flex;
+    background-color:#FFC600 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #7D0093;
+    text-shadow: #7D0093;
+    text-align: center;
+}
+.botao-cadastro {
+
+    text-align: center;
+    color: #7D0093;
+}
+
+.lado { display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: #7D0093;    
+}
+.rodape {
+    background-color:#7D0093;
+}
+#logo{
+    background-image: url("../Ibagens/shows.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+.ajeita img {
+    width: 45%;
+    height: 45%;
+    margin: 10px 0;
+}
+.ajeita{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+background-color: #FFC600;
+}
+
+
+
+/***********ESTILO***************/
+
+
+
+
+/***************NAV*********************/
+nav {
+    background-color:#7D0093;
+    width: 100%;
+    z-index: 999;
+    
+}
+
+nav #bt-mobile-menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+    list-style-type: none;
+    
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+    padding: 0.4em;
+    display: block;
+    text-decoration: none;
+    color: #361a0c;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    background-color:#FFC600;
+    color: #fff;
+}
+/*************NAV*****************/
+
+/******************MOBILE **************************/
+
+
+/***********MOBILE************/
+
+    
+
+@media (max-width: 625px) {
+    nav #bt-mobile-menu {
+        display: none;
+    }
+    
+    nav #bt-mobile-menu {
+        display: block;
+    }
+    
+    nav .bt-common-menu {
+        display: none;
+    }
+    
+    nav .bt-common-menu.active {
+        display: block;
+    }
+    
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+    }
+    #logo>img {
+        padding: 3em 0 0 0;
+        width: 35%;
+    }
+}
+
+@media (max-width: 900px){
+    #logo img {
+        width: 50%;
+    }
+}

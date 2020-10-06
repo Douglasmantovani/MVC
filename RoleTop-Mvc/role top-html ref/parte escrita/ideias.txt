@@ -1,0 +1,57 @@
+oque o cliente precisa
+
+-um sistema de login(campo com email e senha e um captcha )
+-sistema de cadastro(campos com informaçoes/dados pessoais endereço de email e dados do cartao de credito como opcional)
+-sitema de avaliaçao para haver transparencia com cliente(o algoritimo somara as avaliaçoes e calculara a media) 
+-sistema de pagamento seguro,que proteja os dados do cliente (sistema de pague seguro https://enotas.com.br/blog/pagseguro-como-funciona/)
+-sistema de termos de liceça(contrato on line para que o cliente esteja ciente das especificaçoes e deveresque tem com o local) 
+-sitema de devoluçao para extornar o dinheiro do cliente em caso de cancelamentos(havera uma avaliaçao de uma pessoa fisica para evitar fraude,e avaliara se o caso do extorno é legitimo) 
+-sistema para reclamaçoes(um email para reclamçoes)
+-aba de que detalhe o local(banheiros,saidas de emergencia) e sua localizaçao(estara no contrato) 
+-filtros para que seja mais facil achar eventos dentro das especificaçoes do cliente(filtro de multiplas escolhas que possiblilete combinaçoes)
+-sistema de agendamento que indique datas e horarios disponiveis
+-aba de comentarios (area para que os cadastrados tirem suas duvidas e compartilhem informaçoes e experiencias)
+-sistema contra bots maliciosos (eu nao sou robo/captcha)
+-aba de contato para haver comunicaçao com os administradores do local(email e numero de telefone especifico para entar em conato)
+-linguagem formal e objetiva para que nao haja duvidas
+-sistema de banco de dados(SQL Server ums dos mais recomendados para e-comerce) 
+
+
+problemas 
+
+-adaptar para celular -
+-desenvolver um bot eficiente dentro do prazo-
+-desenvolver um sistema criptografico que proteja as informaçoes-
+-desenvolver sistema contra malwere -
+-desenvolver o bot que organiza e informa datas e horarios disponiveis-
+
+soluçoes
+
+-bot de segurança pronto para proteger contra bots maliciosos e roubo de informaçao(captha e https)
+-a adptaçao para celular pode sair aparte dps de um tempo 
+
+ideias
+
+-desevolver sistema de traduçao e linguas com no minimo portugues br,mandarim e ingles
+-desnvolver um mini game em quanto a pagina carrega (montagem de hamburguer ou jogo de perguntas e respostas)
+-divulgar empresas parceiras 
+-sistema de propagandas para divulgar empresas terceirisadas parceiras aparte como fotografos,humoristas,cantores e etc
+-aba de favoritos que facilitara o pedido e exigira menos tempo do cliente 
+-aba de novidades 
+-aba de mais alugados 
+-aba onde disponiblizam e mostram os certificados de segurança 
+-aba de creditos para que o cliente saiba quem esta por tras da organizaçao
+-aba de historia para que o cliente entenda como tudo começou  
+-sitema para economizar o tempo do clienee tornando o aluguel rapido e simples
+-sistema de notifiçao via mensagem para divulgar possiveis descontos e oferttas especiais
+-sistema que permita o cliente logar com conta associada a redes social
+-aba de promoçoes 
+-musica que toca em quanto o cliente navega na pagina 
+-sistema de de inatividade ,quando nao ha atividade o individuo e redirecionado para nao sobrecarregar a pagina
+-sistema de ofertas especias so pra clientes que usaram aquele espaço um determinado numero de vezes
+-sistema de chat ao vivo 
+-sistema para compartilhar em redes sociais dando um alcance maior
+-um sistema de galeria de imagem para expor eventos passados e incentivar o cliente 
+-criar perfís em rede sociais para ampliar o alcance 
+-sistema de segurança contra malwere que exploram a vulnerabilidade da pagina
+-sistema de backup contra ataques hacker

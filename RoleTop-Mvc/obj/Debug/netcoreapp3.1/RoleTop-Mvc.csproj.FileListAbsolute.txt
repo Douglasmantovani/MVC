@@ -1,0 +1,9 @@
+C:\Users\senai\Desktop\RoleTop-Mvc\obj\Debug\netcoreapp3.1\RoleTop-Mvc.csprojAssemblyReference.cache
+C:\Users\senai\Desktop\RoleTop-Mvc\obj\Debug\netcoreapp3.1\RoleTop-Mvc.AssemblyInfoInputs.cache
+C:\Users\senai\Desktop\RoleTop-Mvc\obj\Debug\netcoreapp3.1\RoleTop-Mvc.AssemblyInfo.cs
+C:\Users\senai\Desktop\RoleTop-Mvc\obj\Debug\netcoreapp3.1\RoleTop-Mvc.csproj.CoreCompileInputs.cache
+C:\Users\senai\Desktop\RoleTop-Mvc\obj\Debug\netcoreapp3.1\RoleTop-Mvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\senai\Desktop\RoleTop-Mvc\obj\Debug\netcoreapp3.1\RoleTop-Mvc.TagHelpers.input.cache
+C:\Users\senai\Desktop\RoleTop-Mvc\obj\Debug\netcoreapp3.1\RoleTop-Mvc.TagHelpers.output.cache
+C:\Users\senai\Desktop\RoleTop-Mvc\obj\Debug\netcoreapp3.1\RoleTop-Mvc.dll
+C:\Users\senai\Desktop\RoleTop-Mvc\obj\Debug\netcoreapp3.1\RoleTop-Mvc.pdb

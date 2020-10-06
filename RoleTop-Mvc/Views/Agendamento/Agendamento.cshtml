@@ -1,0 +1,115 @@
+@model RoleTop_Mvc.ViewModel.AgendamentoViewModel
+
+<section class="agendar">
+        <h1>Agendar eventos</h1>
+        <form method="POST" action='@Url.Action("Registrar", "Agendamento")'>
+        <div>
+        <label for="nome">Nome Completo</label>
+        <br />
+        <input id="nome" type="text" maxlength="20" minlength="3" name="nome" value="@Model.cliente.Nome"/>
+        </div>
+        <div>
+        <label for="cpf">CPF/CNPJ</label>
+        <br />
+        <input id="cpf" type="number" maxlength="11" minlength="11" name="CPF" value="@Model.cliente.CPF" />
+        </div>
+        <div>
+        <label for="telefone">Telefone para contato</label>
+        <br />
+        <input id="telefone" type="number" name="telefone" value="@Model.cliente.Telefone"/>
+        </div>
+        <div>
+        <label for="email">E-mail</label>
+        <br />
+        <input id="email" type="email" name="email" value="@Model.cliente.Email"/>
+        </div>
+                                        <div>
+                                        <label for="Eventos">Eventos</label>
+                                        <br>
+                                        <select id="Eventos" required name="Eventos">
+                                        <option value="" disabled selected>Selecione</option>
+                                        <option value="Formatura">Formatura</option>
+                                        <option value="Shows">Shows</option>
+                                        <option value="Casamento">Casamento</option>
+                                        <option value="Aniversario">Aniversário</option>
+                                        <option value="Confraternizacao">Confraternização</option>
+                                        <option value="Balada">Baladas</option>
+                                        <option value="Magica">Mágica</option>
+                                        <option value="Stand-up">stund-up</option>
+                                        </select>
+                                        </div> 
+                                <div>                                      
+                                <label for="Npessoas">N°de pessoas</label>
+                                <br>
+                                <select id="Npessoas" required name="Npessoas">
+                                <option value="" disabled selected>Selecione</option>
+                                <option>100</option>
+                                <option>200</option>
+                                <option>300</option>
+                                <option>400</option>
+                                </select>
+                                </div>
+                                <label for="tipo evento">Tipo do evento</label>
+                                <br>
+                                <select id="tipo eventos" required name="tipoevento">
+                                <option value="" disabled selected>Selecione</option>
+                                <option>Publico</option>
+                                <option>Privado</option>
+                                </select>
+                                </div>
+                                <br>
+                                <label for="Adicionais">Adicionais</label>
+                                <br>
+                                <select id="Adicionais" required name="adicionais">
+                                <option value="" disabled selected>Selecione</option>
+                                <option>Iluminação</option>
+                                <option>Som</option>
+                                </select>
+                                </div>
+                                <br>
+        Data do evento
+        <br>
+        <input type="date" name="dataevento" min="2000-01-02" required >
+        <h1>Cartao de credito</h1>
+                        <div>
+                        <label for="nome">Nome impresso no cartão</label>
+                        <br />
+                        <input id="nome" type="text" maxlength="20" minlength="3" name="nomeCartao" required />
+                        </div>
+                <div>
+                <label for="NCartao">N°do cartão</label>
+                <br />
+                <input id="NCartao" type="number" maxlength="20" minlength="3" name="Ncartao" required />
+                </div>
+                                <div>
+                                validade
+                                <br />
+                                <input type="date" name="validade" min="2000-01-02" required>
+                                </div>
+                        <div>
+                        <label for="cvv">cvv</label>
+                        <br />
+                        <input id="cvv" type="passoword" maxlength="3" minlength="3" name="cvv" required />
+                        </div>
+                        <div>                                      
+                                <label for="Parcelamento">Parcelamento</label>
+                                <select id="Parcelamento" name="parcelamento">
+                                <option value="" disabled selected>Selecione</option>
+                                <option>2x</option>
+                                <option>4x</option>
+                                <option>6x</option>
+                                <option>8x</option>
+                                <option>10x</option>
+                                </select>
+                                </div>
+                                        <div>
+                                        <label for="endereco">Endreço</label>
+                                        <br />
+                                        <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" required />
+                                        </div>
+                        <input  type="checkbox" name="vehicle1" value="Termos" required>Termos de uso<br>
+                                        <h1>Total a pagar</h1>
+                                        <h3>10,000</h3>
+                                        <input type="submit" value="Solicitar agendamento!" />
+                                        </form>
+                                        </section>

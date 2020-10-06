@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#logo{
+    background-color: #FFC600;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+main {
+    background-color: #FFC600;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    width: 100%;
+}
+nav {
+    background-color:#7D0093;
+    width: 100%;
+    z-index: 999;
+}
+
+nav #bt-mobile-menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+    list-style-type: none;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+    padding: 0.4em;
+    display: block;
+    text-decoration: none;
+    color: #361a0c;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    background-color:#FFC600;
+    color: #fff;
+}
+.logo {
+    background-color: #FFC600;
+}
+.rodape {
+    background-color:#7D0093;
+}
+.titulomei{
+    text-align: center;
+    background-color: #FFC600;}
+
+#painel {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+.box-status-pedidos {
+    width: 30%;
+    padding-top: .5em;
+    text-align: center;
+}
+.box-status-pedidos > p {
+    font-size: 2em;
+    padding: 0.5em 0 0 0;
+}
+
+.box-status-pedidos.reprovados {
+    background-color: #a70000;
+}
+
+.box-status-pedidos.aprovados {
+    background-color: #669100;
+}
+
+.box-status-pedidos.pendentes {
+    background-color: #ff9933;
+}
+
+table {
+    text-align: center;
+    border: 1px dashed #ff9933;
+    width: 100%;
+    padding: 5px;
+    word-break: normal;
+}
+
+table th {
+    background-color:#a70000;
+}
+
+table a {
+    text-decoration: none;
+    color: #ff9933;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+tfoot td {
+    text-align: center;
+    color: #ff9933;
+    background-color: #a70000;
+}
+
+thead > tr:first-child > th:last-child {
+    padding: 0 .5em;
+}
+
+
+    /*******Mobile********/
+
+@media (max-width: 625px) {
+    .box-status-pedidos {
+        width: 30%;
+        padding-top: .5em;
+        text-align: center;
+        
+    }
+    .box-status-pedidos > p {
+        font-size: 2em;
+        padding: 0.5em 0 0 0;
+    }
+    
+    .box-status-pedidos.reprovados {
+        background-color: #a70000;
+    }
+    
+    .box-status-pedidos.aprovados {
+        background-color: #669100;
+    }
+    
+    .box-status-pedidos.pendentes {
+        background-color: #ff9933;
+    }
+
+    .titulomei{
+        text-align: center;
+        background-color: #FFC600;}
+
+    nav #bt-mobile-menu {
+        display: none;
+    }
+    
+    nav #bt-mobile-menu {
+        display: block;
+    }
+    
+    nav .bt-common-menu {
+        display: none;
+    }
+    
+    nav .bt-common-menu.active {
+        display: block;
+    }
+    
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+    }
+    #logo>img {
+        padding: 3em 0 0 0;
+        width: 35%;
+    }
+    
+    main {background-color: #FFC600;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.4em;
+        width: 100%;
+        
+    }
+    h4 {
+        font-size: 1em;
+        
+    }
+    table {
+        text-align: center;
+    }
+    
+    table th {
+        background-color:#a70000;
+        
+    }
+    
+    table a {
+        
+        color: #ff9933;
+        
+    }
+    
+
+    tfoot td {
+        text-align: center;
+        color: #ff9933;
+        background-color: #a70000;
+        width: 90%;
+    }
+    
+    thead > tr:first-child > th:last-child {
+        padding: 0 .5em;
+    }
+    
+}
+@media (max-width: 900px){
+    #logo img {
+        width: 50%;
+    }
+    
+}

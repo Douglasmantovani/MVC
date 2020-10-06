@@ -1,0 +1,141 @@
+﻿@model RoleTop_Mvc.ViewModel.BaseViewModel
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/349a64cb04.js "></script>
+        
+        @if(!"Home".Equals(@Model.NomeView))
+    {
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="~/css/agendamento.css">
+        <link rel="stylesheet" type="text/css" href="~/css/dashzera.css">
+    }
+    @if("CriarCadastro".Equals(Model.NomeView))
+    {
+        <link rel="stylesheet" type="text/css" href="~/css/criarconta.css">
+    }
+    @if("Login".Equals(Model.NomeView))
+    {
+        <link rel="stylesheet" type="text/css" href="~/css/login.css">
+    }
+    @if("Espaco".Equals(Model.NomeView))
+    {
+    <link rel="stylesheet" type="text/css" href="~/css/sobreespaço.css">
+    }
+    @if("Eventos".Equals(Model.NomeView))
+    {
+        <link rel="stylesheet" type="text/css" href="~/css/Eventos.css">
+    }
+    @if("Fotos".Equals(Model.NomeView))
+    {
+        <link rel="stylesheet" type="text/css" href="~/css/fotos.css">
+    }
+    @if("Agendamento".Equals(Model.NomeView))
+    {
+        <link rel="stylesheet" type="text/css" href="~/css/agendamento.css">
+    }
+    @if("Orcamento".Equals(Model.NomeView))
+    {
+        <link rel="stylesheet" type="text/css" href="~/css/orçamento.css">
+    }
+    @if("Dashboard".Equals(Model.NomeView))
+    {
+        <link rel="stylesheet" type="text/css" href="~/css/dashzera.css">
+    }
+    <title>Role top</title>
+</head>
+<!-----------***********************NAV*************************************---->
+<body>
+    <header>
+        <nav>
+            <div class="section-container">
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>        
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
+                    @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
+                    {
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>
+                                            <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Espaco" asp-action="Espaco">Espaço</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Eventos" asp-action="Eventos">Eventos</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Fotos" asp-action="Fotos">Galeria de Fotos</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Agendamento" asp-action="Agendamento">Solicitar agendamento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Orcamento" asp-action="Orcamento">Orçamento</a></li>
+                    }
+                    else
+                    {
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Logoff">Logoff</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Espaco" asp-action="Espaco">Espaço</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Eventos" asp-action="Eventos">Eventos</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Fotos" asp-action="Fotos">Galeria de Fotos</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Agendamento" asp-action="Agendamento">Solicitar agendamento</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Orcamento" asp-action="Orcamento">Orçamento</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Historico">Historico</a></li>
+                    }
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+            <section id="logo">
+            <img src="/ibagens/logo.png">
+            </section>
+        
+@RenderBody()
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.648477085071065!3d-23.53656648469522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda+Bar%C3%A3o+de+Limeira%2C+539+-+Campos+El%C3%ADseos%2C+S%C3%A3o+Paulo+-+SP%2C+01202-001!5e0!3m2!1sen!2sbr!4v1550223658410"
+width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+<footer class="rodape">  
+            <br>
+            Avenida de Limeira, 539 - Campos Elíseos - SP
+            <br />
+            <br>
+            LIGUE JÁ N°(11)*********
+<br/>
+<br>
+WPP N°(11)*********
+<br/>
+<br>
+GMAIL:roletopyongsgmail.com
+<br/>
+
+            <img src="/ibagens/download.png">
+            <img src="/ibagens/instagram-logo-3.png">
+            <img src="/ibagens/mzl.dcrmnnjr.png">
+            <img src="/ibagens/soon-873316_960_720.png">
+            <img src="/ibagens/twitter-entrar-1.jpg"> 
+</footer>
+</div>
+                        <script>
+                            function toggleMobileMenu() {
+                                var ul = document.querySelector("nav ul");
+                                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                                var icon = document.querySelector(".icon > i");
+                                ul.classList.toggle("mobile-mode");
+                                if (icon.classList.contains("fa-bars")) {
+                                    icon.classList.remove("fa-bars");
+                                    icon.classList.remove("fa");
+                                    icon.classList.add("fas");
+                                    icon.classList.add("fa-skull");
+                                } else {
+                                    icon.classList.remove("fas");
+                                    icon.classList.remove("fa-skull");
+                                    icon.classList.add("fa");
+                                    icon.classList.add("fa-bars");
+                                }
+                                for (var button of commonButtons) {
+                                    button.classList.toggle("active");
+                                }
+                            }
+                            
+                        </script>
+                    </body>
+</html>

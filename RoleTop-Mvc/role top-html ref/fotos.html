@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/fotos.css">
+    <script src="https://kit.fontawesome.com/349a64cb04.js "></script>
+    <title>Fotos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="section-container">
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>        
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="roletop.html">Home</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html" class="active">Login</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="sobre o espaço.html">Espaço</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="Eventos.html">Eventos</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="fotos.html">Galeria de Fotos</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="agendamento.html">Solicitar agendamento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="orçamento.html">Orçamento</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="logo">
+            <img src="ibagens/logo.png">
+        </section>
+    </header>
+<!---*****************************NAV END**********************************************************-->
+
+
+<section class="ajeita">
+    <img src="ibagens/Fimdeano.jpg">
+    <img src="ibagens/Prod - 2.jpg">
+    <img src="ibagens/espaco-para-casamento-em-curitiba-taboo-eventos-20.jpg">
+    <img src="ibagens/espaço-para-eventos-corporativos.png">
+    <img src="ibagens/eventosHome_05.jpg">
+    <img src="ibagens/formatura Administração (2).jpg">
+    <img src="ibagens/foto-venda-de-shows.jpg">
+    <img src="ibagens/grande-hotel-eventos-sociais-8.jpg">
+    <img src="ibagens/images (2).jpg">
+    <img src="ibagens/images.jpg">
+    <img src="ibagens/lisandra-roger-2-copia_13_131967.jpg">
+    <img src="ibagens/salao-para-festa.jpg">
+    <img src="ibagens/374921000030114.jpg">
+    <img src="ibagens/90581893-01ea-4204-ae7a-4f3390c6fabb.jpg">
+    <img src="ibagens/AAAAEEEESALAO-DE-FESTAS-BH-CIDADE-NOVA-ESPACO-EM-FESTA_673817_2016_2_12_54_27_92029.jpg">
+    <img src="ibagens/Eventos-Corporativos-Resort-4-1576x670.jpg">
+    <img src="ibagens/Eventos.jpg">
+    <img src="ibagens/Festa-da-Espuma.jpg">
+    <img src="ibagens/stand up.jpg">
+    <img src="ibagens/marcel_sachetti_8.jpg">
+    <img src="ibagens/12.jpg">
+    <img src="ibagens/123.jpg">
+</section>
+
+
+
+
+                <section id="local">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.648477085071065!3d-23.53656648469522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda+Bar%C3%A3o+de+Limeira%2C+539+-+Campos+El%C3%ADseos%2C+S%C3%A3o+Paulo+-+SP%2C+01202-001!5e0!3m2!1sen!2sbr!4v1550223658410"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>                        </section>
+                        <div class="rodape">
+                        
+                        <footer>
+                        <address>
+                        <br>
+                        Avenida de Limeira, 539 - Campos Elíseos - SP
+                        <br />
+                        <br>
+                        LIGUE JÁ N°(11)*********
+                        </br>
+                        <br>
+                        WPP N°(11)*********
+                        </br>
+                        <br>
+                                    GMAIL:roletopyongs@gmail.com
+                        </br>
+                        </address>
+                                    
+                        </address>
+                        <a href="#">Voltar para o topo!</a>
+                        </footer>
+                        
+                        <img src="ibagens/download.png">
+                        <img src="ibagens/instagram-logo-3.png">
+                        <img src="ibagens/mzl.dcrmnnjr.png">
+                        <img src="ibagens/soon-873316_960_720.png">
+                        <img src="ibagens/twitter-entrar-1.jpg">
+</div>
+<script>
+    function toggleMobileMenu() {
+        var ul = document.querySelector("nav ul");
+        var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+        var icon = document.querySelector(".icon > i");
+
+        ul.classList.toggle("mobile-mode");
+
+        if (icon.classList.contains("fa-bars")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.remove("fa");
+
+            icon.classList.add("fas");
+            icon.classList.add("fa-skull");
+        } else {
+            icon.classList.remove("fas");
+            icon.classList.remove("fa-skull");
+
+            icon.classList.add("fa");
+            icon.classList.add("fa-bars");
+        }
+
+        for (var button of commonButtons) {
+            button.classList.toggle("active");
+        }
+
+    }
+    
+</script>
+
+
+
+
+    
+</body>
+</html>

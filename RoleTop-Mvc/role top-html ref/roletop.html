@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/349a64cb04.js "></script>
+    <title>Role top</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="section-container">
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>        
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="roletop.html">Home</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html" class="active">Login</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="sobre o espaço.html">Espaço</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="Eventos.html">Eventos</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="fotos.html">Galeria de Fotos</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="agendamento.html">Solicitar agendamento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="orçamento.html">Orçamento</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!---*****************************NAV END**********************************************************-->
+        
+    </header>
+        <section id="logo">
+            <img src="ibagens/logo.png">
+    </section>
+                        <section class="cadastre-se">
+                                <div class="botao-cadastro">
+                                    <h1><a href="criar conta.html">CADASTRE-SE</a></h1>
+                                        <h2>Fornecendo o melhor estabelecimento da região por um preço que vai tornar o
+                                        seu role um role que vocês e seus amigos nunca esquecerão. Recebemos diversos eventos
+                                        em nosso estabelecimento desde shows de magicas a casamentos.
+                                        Venha para um Role que voce e seus amigos nunca esqueceram.</h2> 
+                                                    <br></br>
+                                                    <br></br>
+                                                    <br></br>
+                                                    <h2> Nossa historia </h2>
+                                                <h2> Em uma viajem a negócios em busca de abrir
+                                    uma hamburgueria,pensamos melhor e decidi-
+                                    mos abrir um salão para shows e eventos pois
+                                    foi observado que muitos jovens frequentavam
+                                    a região, tínhamos um publico e um meio de 
+                                    diversão para oferecer a esse publico, a empresa
+                                    tem esse nome justamente por causa desse 
+                                    publico jovem que busca por diversão a todo momento.
+                                    Eventos que realizamos:shows,baladas,stand ups,casamentos</h2> 
+                                </div>
+                    </section>
+            <section class="ajeita">
+    <img src="ibagens/Fimdeano.jpg">
+    <img src="ibagens/Prod - 2.jpg">
+    <img src="ibagens/espaco-para-casamento-em-curitiba-taboo-eventos-20.jpg">
+    <img src="ibagens/espaço-para-eventos-corporativos.png">
+            </section>
+<!--***************************************INICIAL END*********************************************************************************-->
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.648477085071065!3d-23.53656648469522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda+Bar%C3%A3o+de+Limeira%2C+539+-+Campos+El%C3%ADseos%2C+S%C3%A3o+Paulo+-+SP%2C+01202-001!5e0!3m2!1sen!2sbr!4v1550223658410"
+width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+<footer class="dra">  
+            <br>
+            Avenida de Limeira, 539 - Campos Elíseos - SP
+            <br />
+            <br>
+            LIGUE JÁ N°(11)*********
+</br>
+<br>
+WPP N°(11)*********
+</br>
+<br>
+GMAIL:roletopyongs@gmail.com
+</br>
+
+<img src="ibagens/download.png">
+<img src="ibagens/instagram-logo-3.png">
+<img src="ibagens/mzl.dcrmnnjr.png">
+<img src="ibagens/soon-873316_960_720.png">
+<img src="ibagens/twitter-entrar-1.jpg"> 
+</footer>
+</div>
+                        <script>
+                            function toggleMobileMenu() {
+                                var ul = document.querySelector("nav ul");
+                                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                                var icon = document.querySelector(".icon > i");
+                                ul.classList.toggle("mobile-mode");
+                                if (icon.classList.contains("fa-bars")) {
+                                    icon.classList.remove("fa-bars");
+                                    icon.classList.remove("fa");
+                                    icon.classList.add("fas");
+                                    icon.classList.add("fa-skull");
+                                } else {
+                                    icon.classList.remove("fas");
+                                    icon.classList.remove("fa-skull");
+                                    icon.classList.add("fa");
+                                    icon.classList.add("fa-bars");
+                                }
+                                for (var button of commonButtons) {
+                                    button.classList.toggle("active");
+                                }
+                            }
+                            
+                        </script>
+                    </body>
+</html>

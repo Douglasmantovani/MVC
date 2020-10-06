@@ -1,0 +1,36 @@
+<section class="cadastro">
+<h1>CADASTRE-SE</h1>
+<form method="POST" action='@Url.Action("CadastrarCliente", "Cadastro")'>
+    <div>
+        <label for="nome">Nome Completo</label>
+        <br />
+        <input id="nome" type="text" maxlength="20" minlength="3" name="nome" required />
+    </div>
+    <div>
+        <label for="cpf">CPF/CNPJ</label>
+        <br />
+        <input id="cpf" type="number" maxlength="20" minlength="3" name="cpf" required />
+    </div>
+    <div>
+        <label for="telefone">Telefone para contato</label>
+        <br />
+        <input id="telefone" type="number" required name="telefone"/>
+    </div>
+    <div>
+        <label for="email">E-mail</label>
+        <br />
+        <input id="email" type="email" required name="email"/>
+    </div>
+    <div>
+            <label for="senha">Senha</label>
+            <br />
+            <input id="senha" type="password" maxlength="20" minlength="3" name="senha" required />
+    </div>
+    <div>
+            <label for="ConfirmarSenha">Confirmar Senha</label>
+            <br />
+            <input id="ConfirmarSenha" type="password" maxlength="20" minlength="3" name="confirmar" required />
+    </div>
+        <input type="submit" value="Criar conta" />
+        </form>
+        </section>
